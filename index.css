@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #0f1e27;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #777;
+    background-color: #8adf9d;
 }
 
 .container {
@@ -43,7 +43,7 @@ nav a:hover {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(12, 201, 68, 0.1);
     margin: 20px auto;
 }
 
@@ -67,7 +67,7 @@ input {
 
 button {
     flex: 0 0 100%;
-    background-color: #4caf50;
+    background-color: #47994a;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -108,6 +108,11 @@ button {
 .quantity-buttons {
     display: flex;
     justify-content: space-between;
+}
+
+img {
+    height: 150px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento entre o logotipo e o texto */
 }
 
 .subtract-button,
