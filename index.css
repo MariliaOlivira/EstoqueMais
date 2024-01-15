@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #4caf50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+label {
+    flex: 0 0 100%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    flex: 0 0 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+.catalog-item {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.product-info {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+.quantity-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtract-button,
+.add-button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+
+/* Limpa o espaço à direita do último item em cada linha */
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* Limpa o espaço à direita do último item em cada linha para telas menores */
+@media (max-width: 768px) {
+    .catalog-item:nth-child(3n) {
+        margin-right: 20px;
+    }
+}
+
+/* Ajusta para telas menores */
+@media (max-width: 480px) {
+    .catalog-item {
+        width: calc(50% - 20px);
+    }
+
+    .catalog-item:nth-child(2n) {
+        margin-right: 20px;
+    }
+
+    .catalog-item:nth-child(2n + 1) {
+        margin-right: 0;
+    }
+}
+
+.catalog-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto;
+}

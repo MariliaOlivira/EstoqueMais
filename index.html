@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Estoque</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Compras</h1>
+    </header>
+     <div class="container">
+        <!-- Seu formulário existente -->
+        <form id="productForm">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" required>
+
+            <label for="productQuantity">Quantidade:</label>
+            <input type="number" id="productQuantity" required>
+
+            <label for="productKG">Quantos quilos tem o produto:</label>
+            <input type="number" id="productKG" required>
+
+            <label for="productCostPrice">Preço de compra:</label>
+            <input type="number" id="productCostPrice" required>
+
+            <label for="productSellingPrice">Preço de venda:</label>
+            <input type="number" id="productSellingPrice" required>
+
+            <label for="paymentMethod">Método de Pagamento:</label>
+            <select id="paymentMethod" required>
+                <option value="Pix">Pix</option>
+                <option value="Cartao">Cartão</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+
+            <label for="productImage">Imagem do Produto:</label>
+            <input type="file" id="productImage" accept="image/*" required>
+
+            <button type="button" onclick="addProduct()">Adicionar Produto</button>
+        </form>
+    </div>
+
+    <section class="produtos">
+        <div id="productList">
+
+        </div>
+    </section>
+
+    <!-- <div id="productList">
+         Aqui será exibida a lista de produtos
+    </div> -->
+
+    <script src="index.js"></script>
+</body>
+</html>
