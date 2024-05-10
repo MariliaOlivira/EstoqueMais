@@ -8,7 +8,6 @@ const PaymentMethod = {
     DINHEIRO: 'Dinheiro'
 };
 
-
 function addProduct() {
     // Obter dados do formulário
     const productName = document.getElementById('productName').value;
@@ -58,7 +57,6 @@ function addProduct() {
         alert('Preencha todos os campos do formulário.');
     }
 }
-
 
 function addToPurchaseHistory(product, quantity, payment) {
     // Adicionar compra ao histórico
@@ -163,7 +161,6 @@ function displayProducts() {
     productListDiv.appendChild(totalSalesElement);
 }
 
-
 function updatePurchaseQuantity(index, newQuantity) {
     if (newQuantity >= 0) {
         const product = products[index];
@@ -253,9 +250,6 @@ function subtractQuantity(index, quantity, paymentMethod) {
         alert('Quantidade inválida para venda.');
     }
 }
-
-
-
 
 function addPurchaseHistory(product, quantity, paymentMethod) {
     const purchase = {
